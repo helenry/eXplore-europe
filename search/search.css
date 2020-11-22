@@ -1,0 +1,128 @@
+/* css reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset end */
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0 7em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.bar {
+	display: grid;
+	grid-template-columns: 10.75fr .5fr .5fr;
+	align-items: center;
+	grid-template-rows: 3em;
+	padding: 0 1em;
+	border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.bar p {
+	font-size: 1.4em;
+	font-weight: 600;
+	color: rgb(100, 100, 100);
+}
+
+.bar img {
+	height: 1.25em;
+	justify-self: end;
+}
+
+.list img.iceland {
+	width: 15em;
+	border-radius: 20px;
+}
+
+.list {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1.25fr;
+	align-items: center;
+	margin-top: 2em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid rgb(220, 220, 220);
+	column-gap: 3em;
+}
+
+.list .word {
+	margin-right: 1em;
+}
+
+.list h4 {
+	font-weight: 600;
+	font-size: 2em;
+	margin-bottom: .75em;
+	transition: text-shadow .1s;
+}
+
+.list h4:hover {
+	text-shadow: 2px 2px 1px #00ccec;
+}
+
+.list .icon {
+	display: flex;
+	align-items: center;
+	margin-bottom: .5em;
+	font-size: 1.2em;
+	color: #777777;
+}
+
+.icon img {
+	height: 1.25em;
+	margin-right: .75em;
+}
+
+.list .description {
+	color: rgb(75, 75, 75);
+}
+
+.list .button {
+	width: 6em;
+	padding: 1em;
+	background-color: #00ccec;
+	font-family: lato, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	border-radius: 40px;
+	text-align: center;
+}
+
+.list .button a {
+	color: white;
+}

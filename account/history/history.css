@@ -1,0 +1,351 @@
+/* css reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset end */
+
+a {
+	text-decoration: none;
+}
+
+/* nav */
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 7em;
+	padding: 1em 0;
+	border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+nav .logo img {
+	width: 6em;
+}
+
+nav .navigation ul a, nav .account ul a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: .9em;
+	color: rgb(75, 75, 75);
+}
+
+nav .navigation ul {
+	width: 27.5em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .navigation img {
+	width: 1.5em;
+}
+
+nav .account ul {
+	width: 11.5em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/* nav end */
+
+.container {
+	margin: 0 7em;
+}
+
+h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 3.75em;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid rgb(220, 220, 220);
+	padding: 2em 0 2em 3em;
+	border-radius: 20px;
+	margin-bottom: 5em;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+img.iceland {
+	width: 15em;
+	border-radius: 20px;
+}
+
+.left .date {
+	margin-bottom: 1em;
+	font-weight: 600;
+	font-size: 1.25em;
+}
+
+.left .total {
+	font-weight: 600;
+	font-size: 1.5em;
+	padding-top: .5em;
+	border-top: 1px solid rgb(220, 220, 220);
+	margin-right: 5em;
+}
+
+.left .info {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	margin-bottom: 1.5em;
+	column-gap: 4em;
+	align-items: center;
+}
+
+.word h4 {
+	font-weight: 600;
+	font-size: 2em;
+	margin-bottom: .75em;
+}
+
+.detail img {
+	justify-self: center;
+	height: 1em;
+}
+
+.detail img:nth-child(1) {
+	grid-area: imgDate;
+}
+.detail img:nth-child(2) {
+	grid-area: imgFrom;
+}
+.detail img:nth-child(3) {
+	grid-area: imgPeople;
+}
+.detail p:nth-child(1) {
+	grid-area: pDate;
+}
+.detail p:nth-child(2) {
+	grid-area: pFrom;
+}
+.detail p:nth-child(3) {
+	grid-area: pPeople;
+}
+
+.detail {
+	display: grid;
+	grid-template-areas:
+	'imgDate pDate'
+	'imgFrom pFrom'
+	'imgPeople pPeople';
+	grid-template-columns: 1fr 9fr;
+	grid-template-rows: 1.5em 1.5em 1.5em;
+	align-items: center;
+	font-size: 1.1em;
+	color: #777777;
+}
+
+.right {
+	border-left: 1px solid rgb(220, 220, 220);
+	padding: 5em 0;
+	width: 25em;
+	text-align: center;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.right p:first-child {
+	font-weight: 600;
+	font-size: 1.25em;
+	margin-bottom: .75em;
+}
+
+.right p:nth-child(2) {
+	font-weight: 700;
+	font-size: 1.5em;
+	margin-bottom: 2em;
+}
+
+.right .button {
+	padding: 1em;
+	background-color: #fca503;
+	font-family: lato, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	border-radius: 40px;
+	width: 5em;
+}
+
+.right .button a {
+	width: 5em;
+	color: rgb(255, 255, 255);
+}
+
+.mainline {
+	height: 1px;
+	background-color: rgb(230, 230, 230);
+}
+
+/* footer */
+footer {
+	margin: 3.5em 7em 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+footer a {
+	color: black;
+}
+
+footer h4 {
+	font-weight: 700;
+	font-size: 1.1em;
+	margin-bottom: 1.5em;
+	color: rgb(75, 75, 75);
+}
+
+footer .navigation {
+	display: grid;
+	grid-template-columns: 1.25fr 1fr 1fr .75fr;
+	margin-bottom: 1.75em;
+}
+
+footer img.logo {
+	width: 9em;
+}
+
+footer .phoneemail p, footer .countries li a {
+	color: rgb(75, 75, 75);
+	font-size: .95em;
+}
+
+footer .contact img {
+	width: 1.5em;
+}
+
+footer .phoneemail img:nth-child(1) {
+	grid-area: imgPhone;
+}
+footer .phoneemail img:nth-child(2) {
+	grid-area: imgEmail;
+}
+footer .phoneemail p:nth-child(1) {
+	grid-area: pPhone;
+}
+footer .phoneemail p:nth-child(2) {
+	grid-area: pEmail;
+}
+
+footer .phoneemail {
+	display: grid;
+	grid-template-areas:
+	'imgPhone pPhone'
+	'imgEmail pEmail';
+	align-items: center;
+	grid-template-columns: 1fr 5fr;
+	row-gap: .75em;
+	margin-bottom: 2em;
+}
+
+footer .social {
+	display: flex;
+	align-items: center;
+}
+
+footer .social li {
+	margin-right: 1em;
+}
+
+footer .countries li {
+	margin-bottom: .75em;
+}
+
+footer .payment img {
+	width: 2.25em;
+}
+
+footer .payment {
+	display: flex;
+	align-items: center;
+	margin-top: 2em;
+}
+
+footer .payment li {
+	margin-right: 1.5em;
+}
+
+footer .newsletter {
+	justify-self: end;
+}
+
+footer .newsletter input {
+	margin-bottom: 1em;
+	width: 15em;
+	height: 3em;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid rgb(75, 75, 75);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	padding-left: 0;
+}
+
+footer .newsletter input:focus {
+	outline: none !important;
+}
+
+footer .newsletter p {
+	cursor: pointer;
+	background-color: #fca503;
+	width: 50%;
+	padding: .75em;
+	text-align: center;
+	color: white;
+	font-family: lato, sans-serif;
+	font-weight: 800;
+	letter-spacing: 1px;
+	font-size: .9em;
+}
+
+footer .copyright {
+	text-align: center;
+}
+
+footer p.copyright {
+	border-top: 1px solid rgb(175, 175, 175);
+	padding: 1.5em;
+	font-weight: 400;
+	font-size: .9em;
+}
+/* footer end */

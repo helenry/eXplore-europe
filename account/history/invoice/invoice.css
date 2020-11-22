@@ -1,0 +1,156 @@
+/* css reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css reset end */
+
+.container {
+	margin: 0 17.5em;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-image: url(../../../img/icon/paid.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+
+h2 {
+	font-weight: 600;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 3.75em;
+}
+
+.people {
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.25em;
+	margin-bottom: 2em;
+}
+
+.helen p:first-child {
+	font-weight: 600;
+	font-size: 1.25em;
+	margin-bottom: .5em;
+}
+
+.exploreeurope img {
+	width: 7em;
+	margin-bottom: .75em;
+}
+
+.info .date, .info .method {
+	border-top: 1px solid rgb(200, 200, 200);
+	border-bottom: 1px solid rgb(200, 200, 200);
+	padding: 1em 3em;
+}
+
+.info .number {
+	border: 1px solid rgb(200, 200, 200);
+	padding: 1em 3em;
+}
+
+.info {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 5em;
+	align-items: center;
+	margin-bottom: 4em;
+}
+
+.info .date p:first-child, .info .number p:first-child, .info .method p:first-child {
+	font-weight: 600;
+}
+
+.detail .name {
+	grid-area: name;
+}
+.detail .price {
+	grid-area: price;
+}
+.detail .total {
+	grid-area: total;
+}
+.detail .number {
+	grid-area: number;
+}
+
+.detail {
+	display: grid;
+	grid-template-areas:
+	'name price'
+	'total number';
+	grid-template-columns: 3fr 1fr;
+	font-size: 1.1em;
+}
+
+.detail h4 {
+	font-weight: 600;
+	margin-bottom: .75em;
+}
+
+.detail .name {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+}
+
+.price, .detail .number {
+	justify-self: end;
+}
+
+.description, .quantity, .price {
+	line-height: 1.75em;
+}
+
+.description h4, .description p, .quantity h4, .quantity p, .price h4, .price p {
+	border-bottom: 1px solid rgb(200, 200, 200);
+	padding-top: 1em;
+}
+
+.price {
+	width: 100%;
+}
+
+.quantity p:last-child, .price p:last-child {
+	border: 0;
+}
+
+.total, .detail .number {
+	border-top: 1px solid rgb(200, 200, 200);
+	font-weight: 600;
+	font-size: 1.25em;
+	width: 100%;
+	padding-top: 1em;
+}

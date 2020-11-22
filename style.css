@@ -1,0 +1,552 @@
+/* css reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset end */
+
+a {
+	text-decoration: none;
+}
+
+/* header */
+header {
+	background-image: url(img/landingpage/banner.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+/* header end */
+
+/* nav */
+header nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 7em;
+	padding: 1em 0;
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+header nav .logo img {
+	width: 6em;
+}
+
+header nav .navigation ul a, header nav .account ul a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: white;
+	font-size: .9em;
+}
+
+header nav .navigation ul {
+	width: 27.5em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header nav .navigation img {
+	width: 1.5em;
+}
+
+header nav .account ul {
+	width: 11.5em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/* nav end */
+
+/* banner */
+header .banner {
+	margin: 0 10em;
+}
+
+header .banner h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 5em;
+	margin-top: 2.5em;
+	letter-spacing: -2px;
+	color: white;
+}
+
+header .banner p {
+	font-family: lato, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 1.05em;
+	margin-top: 4em;
+	letter-spacing: 1px;
+}
+
+header .banner a {
+	color: white;
+	background-color: #fca503;
+	padding: 1em 2em;
+	border-radius: 40px;
+}
+/* banner end */
+
+/* subheader */
+.subheader {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin: 5em 7em 10em;
+}
+
+.subheader img {
+	width: 42.5em;
+	justify-self: start;
+}
+
+.subheader .box {
+	display: grid;
+	grid-template-columns: .25fr .75fr;
+	height: 7em;
+	justify-items: center;
+}
+
+.subheader .line {
+	width: 75px;
+	height: 3px;
+	background-color: #fca503;
+	justify-self: end;
+}
+
+.subheader h2 {
+	font-family: 'Merriweather', serif;
+	font-size: 3.25em;
+	align-self: center;
+}
+/* subheader end */
+
+/* facility */
+.facility {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 10em 7em;
+}
+
+.facility .word {
+	align-self: center;
+	/* justify-self: center; */
+}
+
+.facility h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 3.75em;
+	margin-bottom: 1.25em;
+}
+
+.facility .facilities p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.6em;
+	color: rgb(125, 125, 125);
+}
+
+.facility .facilities p:nth-child(1) {
+	grid-area: pSatu;
+}
+.facility .facilities p:nth-child(2) {
+	grid-area: pDua;
+}
+.facility .facilities p:nth-child(3) {
+	grid-area: pTiga;
+}
+.facility .facilities p:nth-child(4) {
+	grid-area: pEmpat;
+}
+
+.facility .facilities img {
+	width: 2em;
+}
+
+.facility .facilities img:nth-child(1) {
+	grid-area: imgSatu;
+}
+.facility .facilities img:nth-child(2) {
+	grid-area: imgDua;
+}
+.facility .facilities img:nth-child(3) {
+	grid-area: imgTiga;
+}
+.facility .facilities img:nth-child(4) {
+	grid-area: imgEmpat;
+}
+
+.facility .facilities {
+	display: grid;
+	grid-template-areas:
+	'imgSatu pSatu'
+	'imgDua pDua'
+	'imgTiga pTiga'
+	'imgEmpat pEmpat';
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: 1fr 8fr;
+	row-gap: 1em;
+	align-items: center;
+}
+
+.facility img.cottage {
+	justify-self: end;
+	width: 35em;
+}
+
+/* facility end */
+
+/* destination */
+.destination {
+	margin: 10em 7em;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	row-gap: 7.5em;
+}
+
+.destination img {
+	width: 38em;
+}
+
+.destination a {
+	color: black;
+}
+
+.destination h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 4em;
+	margin-bottom: 1em;
+	transition: text-shadow .1s;
+}
+
+.destination .iceland h3:hover {
+	text-shadow: 5px 5px 2px #00ccec;
+}
+.destination .switzerland h3:hover {
+	text-shadow: 5px 5px 2px #92afd6;
+}
+.destination .greece h3:hover {
+	text-shadow: 5px 5px 2px #48b5ad;
+}
+
+.destination .word .description {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.25em;
+	color: rgb(100, 100, 100);
+	letter-spacing: .3px;
+	line-height: 1.3em;
+}
+
+.destination .button {
+	display: flex;
+	align-items: center;
+	margin-top: 2em;
+}
+
+.destination .book {
+	font-family: lato, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	margin-right: 1.5em;
+	padding: 1.25em 0;
+	border-radius: 30px;
+	width: 9em;
+	text-align: center;
+}
+.destination .wishlist {
+	font-family: lato, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	box-sizing: border-box;
+	padding: 1.25em 0;
+	color: rgb(100, 100, 100);
+	cursor: pointer;
+	border-radius: 30px;
+	width: 9em;
+	text-align: center;
+}
+
+.destination .book a {
+	color: white;
+}
+
+.destination .iceland .book {
+ 	background-color: #00ccec;
+}
+.destination .iceland .wishlist {
+	border: 1px solid #00ccec;
+}
+
+.destination .switzerland .book {
+	background-color: #92afd6;
+}
+.destination .switzerland .wishlist {
+	border: 1px solid #92afd6;
+}
+
+.destination .greece .book {
+	background-color: #48b5ad;
+}
+.destination .greece .wishlist {
+	border: 1px solid #48b5ad;
+}
+
+.destination .iceland {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	column-gap: 7.5em;
+}
+
+.destination .switzerland .word {
+	grid-area: imgSwitzerland;
+}
+.destination .switzerland img {
+	grid-area: wordSwitzerland;
+}
+.destination .switzerland {
+	display: grid;
+	grid-template-areas: 'imgSwitzerland wordSwitzerland';
+	align-items: center;
+	column-gap: 7.5em;
+}
+
+.destination .greece {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	column-gap: 7.5em;
+}
+/* destination end */
+
+/* testimony */
+
+.testimony {
+	background-image: url(img/landingpage/testimony.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	display: grid;
+	grid-template-columns: 1fr 13fr 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.testimony img {
+	width: 1.75em;
+	cursor: pointer;
+}
+
+.testimony .word {
+	color: white;
+	justify-self: start;
+	margin-left: 5em;
+}
+
+.testimony .word h2 {
+	font-family: 'Merriweather', serif;
+	font-size: 3.25em;
+	letter-spacing: 1px;
+	font-size: 4.5em;
+	margin-bottom: .75em;
+	line-height: 1.25em;
+}
+
+.testimony .detail {
+	display: grid;
+	grid-template-columns: 1fr 7fr;
+	column-gap: .25em;
+}
+
+.testimony .line {
+	width: 50px;
+	height: 2px;
+	background-color: #ffffff;
+}
+
+.testimony .word .name {
+	font-family: lato, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 1.5em;
+	margin-bottom: .25em;
+	letter-spacing: 1px;
+}
+
+.testimony .word .who {
+	font-family: lato, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.25em;
+}
+/* testimony end */
+
+/* footer */
+footer {
+	margin: 3.5em 7em 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+footer a {
+	color: black;
+}
+
+footer h4 {
+	font-weight: 700;
+	font-size: 1.1em;
+	margin-bottom: 1.5em;
+	color: rgb(75, 75, 75);
+}
+
+footer .navigation {
+	display: grid;
+	grid-template-columns: 1.25fr 1fr 1fr .75fr;
+	margin-bottom: 1.75em;
+}
+
+footer img.logo {
+	width: 9em;
+}
+
+footer .phoneemail p, footer .countries li a {
+	color: rgb(75, 75, 75);
+	font-size: .95em;
+}
+
+footer .contact img {
+	width: 1.5em;
+}
+
+footer .phoneemail img:nth-child(1) {
+	grid-area: imgPhone;
+}
+footer .phoneemail img:nth-child(2) {
+	grid-area: imgEmail;
+}
+footer .phoneemail p:nth-child(1) {
+	grid-area: pPhone;
+}
+footer .phoneemail p:nth-child(2) {
+	grid-area: pEmail;
+}
+
+footer .phoneemail {
+	display: grid;
+	grid-template-areas:
+	'imgPhone pPhone'
+	'imgEmail pEmail';
+	align-items: center;
+	grid-template-columns: 1fr 5fr;
+	row-gap: .75em;
+	margin-bottom: 2em;
+}
+
+footer .social {
+	display: flex;
+	align-items: center;
+}
+
+footer .social li {
+	margin-right: 1em;
+}
+
+footer .countries li {
+	margin-bottom: .75em;
+}
+
+footer .payment img {
+	width: 2.25em;
+}
+
+footer .payment {
+	display: flex;
+	align-items: center;
+	margin-top: 2em;
+}
+
+footer .payment li {
+	margin-right: 1.5em;
+}
+
+footer .newsletter {
+	justify-self: end;
+}
+
+footer .newsletter input {
+	margin-bottom: 1em;
+	width: 15em;
+	height: 3em;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid rgb(75, 75, 75);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	padding-left: 0;
+}
+
+footer .newsletter input:focus {
+	outline: none !important;
+}
+
+footer .newsletter p {
+	cursor: pointer;
+	background-color: #fca503;
+	width: 50%;
+	padding: .75em;
+	text-align: center;
+	color: white;
+	font-family: lato, sans-serif;
+	font-weight: 800;
+	letter-spacing: 1px;
+	font-size: .9em;
+}
+
+footer .copyright {
+	text-align: center;
+}
+
+footer p.copyright {
+	border-top: 1px solid rgb(175, 175, 175);
+	padding: 1.5em;
+	font-weight: 400;
+	font-size: .9em;
+}
+/* footer end */
