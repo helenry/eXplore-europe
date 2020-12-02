@@ -35,6 +35,10 @@ table {
 }
 /* css reset end */
 
+html {
+	scroll-behavior: smooth;
+}
+
 a {
 	text-decoration: none;
 }
