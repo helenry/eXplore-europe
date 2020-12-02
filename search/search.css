@@ -35,6 +35,10 @@ table {
 }
 /* css reset end */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0 7em;
