@@ -37,6 +37,10 @@ table {
 
 /* css reset end */
 
+html {
+	scroll-behavior: smooth;
+}
+
 .container {
 	margin: 0 17.5em;
 	font-family: 'Source Sans Pro', sans-serif;
